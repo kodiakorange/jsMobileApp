@@ -31,9 +31,10 @@ addButtonEl.addEventListener("click", function () {
 	}
 });
 
-clearBtn.addEventListener("click", function () {
-	confirm("Delete List?");
-});
+// clearBtn.addEventListener("click", function () {
+// 	if (confirm("Delete All?"));
+// 	clearDB();
+// });
 
 function deleteItem(itemId) {
 	const itemRef = ref(database, "shoppingList/" + itemId); // Use getRef to obtain a reference
@@ -72,4 +73,6 @@ function clearInputFieldEl() {
 	inputFieldEl.value = "";
 }
 
-function clearDB() {}
+function clearDB() {
+	shoppingListEl.textContent = "";
+}
