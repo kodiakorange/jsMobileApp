@@ -7,6 +7,22 @@ body {
     background-color: #EEF0F4;
 }
 
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+
+}
+
+ul li {
+    background-color: #FFFDF8;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: .35rem;
+    list-style: none;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2)
+}
+
 .container {
     display: flex;
     flex-direction: column;
