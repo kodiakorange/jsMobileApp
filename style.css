@@ -1,5 +1,6 @@
 html,
 body {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Rubik', sans-serif;
@@ -16,6 +17,8 @@ body {
 img {
     width: 150px;
     margin: 0 auto;
+    border-radius: 25%;
+    margin-bottom: 1rem;
 }
 
 input {
@@ -60,9 +63,4 @@ button:active {
     padding: 0 .2rem;
     border-radius: 50%;
     font-size: .8rem;
-}
-
-img {
-    border-radius: 25%;
-    margin-bottom: 1rem;
 }
