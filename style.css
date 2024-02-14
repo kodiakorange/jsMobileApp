@@ -16,6 +16,8 @@ ul {
 
 ul li {
     background-color: #FFFDF8;
+    text-align: center;
+    flex-grow: 1;
     padding: 1rem;
     border-radius: 1rem;
     margin: .35rem;
