@@ -15,6 +15,7 @@ const app = initializeApp(appSettings);
 const database = getDatabase(app);
 const shoppingListInDB = ref(database, "shoppingList");
 
+const clearBtn = document.getElementById("clear-button");
 const inputFieldEl = document.getElementById("input-field");
 const addButtonEl = document.getElementById("add-button");
 const shoppingListEl = document.getElementById("shopping-list");
@@ -28,6 +29,10 @@ addButtonEl.addEventListener("click", function () {
 
 		// appendItemToShoppingListEl(inputValue);
 	}
+});
+
+clearBtn.addEventListener("click", function () {
+	confirm("Delete List?");
 });
 
 function deleteItem(itemId) {
@@ -66,3 +71,5 @@ onValue(shoppingListInDB, function (snapshot) {
 function clearInputFieldEl() {
 	inputFieldEl.value = "";
 }
+
+function clearDB() {}
